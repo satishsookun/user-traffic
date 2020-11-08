@@ -1,0 +1,13 @@
+.wrapper {
+  width: 100%;
+  display: flex;
+  padding: 50px;
+}
+
+.main-container {
+
+}
+
+@import "header";
+@import "side-bar";
+@import "pages";
