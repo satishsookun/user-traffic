@@ -1,3 +1,25 @@
 <div class="header">
+  <h2></h2>
+  <div class="header__actions">
+    <div class="header__filter">
+      <ul>
+        <li>
+          <ut-calendar
+            [maxDate]="yesterdayDate"
+            [dateLabel]="'Date from'"></ut-calendar>
+        </li>
+        <li>
+          <ut-calendar
+            [maxDate]="todayDate"
+            [dateLabel]="'Date to'"></ut-calendar>
+        </li>
+      </ul>
+    </div>
+
+    <div class="header__search">
+      <ut-search></ut-search>
+    </div>
+  </div>
+
 
 </div>

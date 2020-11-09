@@ -1,1 +1,19 @@
-.header {}
+.header {
+
+  &__actions {
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  &__filter {
+    ul {
+      display: flex;
+      justify-content: flex-end;
+      li {
+        margin: 0 10px;
+      }
+    }
+  }
+
+  &__search {}
+}
