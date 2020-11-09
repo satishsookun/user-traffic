@@ -1,7 +1,7 @@
 import { NgModule } from '@angular/core';
 import {CommonModule} from "@angular/common";
-import {SidebarComponent} from "./sidebar/container/sidebar.component";
-import {ItemComponent} from "./sidebar/ui/item/item.component";
+import {SidebarComponent} from "./container/sidebar.component";
+import {ItemComponent} from "./ui/item/item.component";
 
 @NgModule({
     exports: [

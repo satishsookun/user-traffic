@@ -1,9 +1,9 @@
-import { NgModule } from '@angular/core';
+import {NgModule} from '@angular/core';
 import {CommonModule} from "@angular/common";
 import {MainComponent} from "./main/main.component";
-import {SidebarModule} from "../features/sidebar.module";
-import {HeaderModule} from "../features/header/header.module";
-import {PagesModule} from "../features/pages/pages.module";
+import {SidebarModule} from "./sidebar/sidebar.module";
+import {HeaderModule} from "./header/header.module";
+import {PagesModule} from "./pages/pages.module";
 
 @NgModule({
     exports: [
@@ -21,4 +21,5 @@ import {PagesModule} from "../features/pages/pages.module";
     providers: [],
     bootstrap: []
 })
-export class CoreModule { }
+export class CoreModule {
+}

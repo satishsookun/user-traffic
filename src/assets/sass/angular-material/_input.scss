@@ -1,3 +1,10 @@
-.mat-form-field-appearance-legacy .mat-form-field-wrapper {
-  padding-bottom: 2.2em;
+.mat-form-field {
+  width: 100%;
 }
+.mat-form-field-label {
+  padding: 0 10px;
+}
+.mat-form-field-appearance-legacy .mat-form-field-wrapper {
+  padding-bottom: 20px;
+}
+

@@ -1,5 +1,5 @@
 .side-bar {
-  width: 250px;
+  width: 200px;
 
   &__list {}
   &__item {
@@ -7,6 +7,18 @@
     display: flex;
     justify-content: center;
     flex-direction: column;
+
+    &.active {
+      a {
+        color: $white-color;
+        &:before {
+          width: 5px;
+        }
+        &:after {
+          width: 100%;
+        }
+      }
+    }
 
     a {
       position: relative;
@@ -17,7 +29,13 @@
       text-align: center;
       color: $primary-text-color;
       box-shadow: $box-shadow;
-      font-weight: 700;
+      font-family: $font-regular;
+      font-size: $text-sm;
+      transition: $transition;
+      span {
+        position: relative;
+        z-index: 2;
+      }
 
       &:before {
         content: '';
@@ -35,7 +53,7 @@
         content: '';
         height: 100%;
         width: 0;
-        background-color: rgba($primary-color, 0.1);
+        background-color: rgba($tertiary-color, 1);
         transition: $transition;
         position: absolute;
         top: 0;
@@ -44,6 +62,7 @@
       }
 
       &:hover {
+        color: $white-color;
         &:before {
           width: 5px;
         }
