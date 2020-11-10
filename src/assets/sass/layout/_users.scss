@@ -1,0 +1,12 @@
+.users {
+  display: flex;
+
+  &__list {
+    width: 40%;
+  }
+
+  &__graph {
+    width: 60%;
+    background-color: rgba($primary-color, 0.1);
+  }
+}

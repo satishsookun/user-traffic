@@ -7,16 +7,19 @@ header {
   justify-content: space-between;
   max-width: 1500px;
   margin: 0 auto;
-  align-items: center;
+  align-items: flex-end;
   h2 {
     font-family: $font-medium;
     font-size: $text-lg; // 36px
     color: $primary-text-color;
+    line-height: 45px;
+    margin: 0;
   }
 
   &__actions {
     display: flex;
     justify-content: flex-end;
+    margin-bottom: 13px;
   }
 
   &__filter {

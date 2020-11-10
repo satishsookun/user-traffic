@@ -1,5 +1,6 @@
 .wrapper {
   width: 100%;
+  background-color: #f0f8ff;
 }
 
 .main-container {
@@ -7,8 +8,10 @@
   padding: 0 50px;
   max-width: 1500px;
   margin: 30px auto;
+  display: flex;
 }
 
 @import "header";
 @import "side-bar";
-@import "pages";
+@import "content";
+@import "users";

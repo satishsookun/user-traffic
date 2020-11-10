@@ -3,7 +3,6 @@
 
   &__list {}
   &__item {
-    background: $white-color;
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -32,6 +31,7 @@
       font-family: $font-regular;
       font-size: $text-sm;
       transition: $transition;
+      background: $white-color;
       span {
         position: relative;
         z-index: 2;
