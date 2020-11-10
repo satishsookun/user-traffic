@@ -6,7 +6,7 @@ import {MatDatepickerModule} from "@angular/material/datepicker";
 import {MatInputModule} from "@angular/material/input";
 import {MatNativeDateModule} from "@angular/material/core";
 import {MatIconModule} from "@angular/material/icon";
-import {SearchComponent} from "../../features/search/search.component";
+import {SearchComponent} from "../../features/search/container/search.component";
 
 @NgModule({
     exports: [

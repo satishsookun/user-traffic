@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import {CommonModule} from "@angular/common";
 import {SidebarComponent} from "./container/sidebar.component";
 import {ItemComponent} from "./ui/item/item.component";
+import {AppRoutingModule} from "../../app-routing.module";
 
 @NgModule({
     exports: [
@@ -12,6 +13,7 @@ import {ItemComponent} from "./ui/item/item.component";
         ItemComponent,
     ],
     imports: [
+        AppRoutingModule,
         CommonModule,
     ],
     providers: [],

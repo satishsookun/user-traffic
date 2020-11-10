@@ -1,9 +1,8 @@
 import {NgModule} from '@angular/core';
 import {CommonModule} from "@angular/common";
-import {MainComponent} from "./main/main.component";
+import {MainComponent} from "./main/container/main.component";
 import {SidebarModule} from "./sidebar/sidebar.module";
 import {HeaderModule} from "./header/header.module";
-import {PagesModule} from "./pages/pages.module";
 
 @NgModule({
     exports: [
@@ -16,7 +15,6 @@ import {PagesModule} from "./pages/pages.module";
         CommonModule,
         SidebarModule,
         HeaderModule,
-        PagesModule,
     ],
     providers: [],
     bootstrap: []
