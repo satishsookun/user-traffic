@@ -5,6 +5,26 @@
     width: 40%;
   }
 
+  &__info {
+    ul {
+      li {
+        font-family: $font-medium;
+        color: $primary-color;
+        font-size: $text-sm;
+        margin-bottom: 15px;
+        ul {
+          li {
+            font-family: $font-regular;
+            color: $primary-text-color;
+            margin: 5px 0 10px;
+            border-bottom: none;
+            font-size: 14px;
+          }
+        }
+      }
+    }
+  }
+
   &__graph {
     width: 60%;
     background-color: rgba($primary-color, 0.1);

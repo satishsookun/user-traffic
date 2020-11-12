@@ -1,10 +1,12 @@
 import { NgModule } from '@angular/core';
 import {CommonModule} from "@angular/common";
 import {UsersComponent} from "./container/users.component";
-import {MatRadioModule} from "@angular/material/radio";
+import {MatIconModule} from "@angular/material/icon";
+import {UsersRoutingModule} from "./users-routing.module";
 import {MatExpansionModule} from "@angular/material/expansion";
 
 @NgModule({
+  entryComponents: [UsersComponent],
   exports: [
     UsersComponent
   ],
@@ -13,7 +15,8 @@ import {MatExpansionModule} from "@angular/material/expansion";
   ],
   imports: [
     CommonModule,
-    MatRadioModule,
+    UsersRoutingModule,
+    MatIconModule,
     MatExpansionModule,
   ],
   providers: [],

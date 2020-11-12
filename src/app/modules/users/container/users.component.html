@@ -2,26 +2,53 @@
     <div class="users__list">
         <div class="filter">
             <div class="filter__label">Sort date by:</div>
-            <div class="filter__opt">
-                <mat-radio-group aria-label="Select an option">
-                    <mat-radio-button value="1">Option 1</mat-radio-button>
-                    <mat-radio-button value="2">Option 2</mat-radio-button>
-                </mat-radio-group>
-            </div>
         </div>
+      <div class="accordion">
         <mat-accordion>
-            <mat-expansion-panel>
-                <mat-expansion-panel-header>
-                    <mat-panel-title>
-                        user name:
-                    </mat-panel-title>
-                    <mat-panel-description>
-                        user description goes here
-                    </mat-panel-description>
-                </mat-expansion-panel-header>
-                <p>I'm visible because I am open</p>
-            </mat-expansion-panel>
-        </mat-accordion>
+        <mat-expansion-panel>
+
+          <mat-expansion-panel-header>
+
+            <mat-panel-title>
+              satish sookun
+            </mat-panel-title>
+
+            <mat-panel-description>
+              ID: 2356845
+            </mat-panel-description>
+          </mat-expansion-panel-header>
+
+          <div class="users__info">
+            <ul>
+              <li>User:
+                <ul>
+                  <li>Name: satish sookun</li>
+                  <li>Id: 2356845</li>
+                </ul>
+              </li>
+              <li>
+                Abandoned:
+                <ul>
+                  <li>Date: 2020-01-07</li>
+                  <li>Time: 17:43:20</li>
+                  <li>Days past from today: 7 days</li>
+                </ul>
+              </li>
+              <li>
+                Steps:
+                <ul>
+                  <li>Filter</li>
+                  <li>Dont know</li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+
+        </mat-expansion-panel>
+
+      </mat-accordion>
+      </div>
+
 
     </div>
     <div class="users__graph"></div>

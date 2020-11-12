@@ -1,5 +1,4 @@
 import {ChangeDetectionStrategy, Component} from "@angular/core";
-import {ActivatedRoute} from "@angular/router";
 
 @Component({
   selector: 'ut-users',
@@ -9,8 +8,6 @@ import {ActivatedRoute} from "@angular/router";
 
 export class UsersComponent {
 
-  constructor(
-    private route: ActivatedRoute,
-  ) {}
+  constructor() {}
   
 }

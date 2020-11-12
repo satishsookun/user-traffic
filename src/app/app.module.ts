@@ -17,7 +17,6 @@ import {HeaderModule} from "./core/header/header.module";
     BrowserAnimationsModule,
     SidebarModule,
     HeaderModule,
-
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -1,20 +1,18 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
-import {UserFilterComponent} from "./modules/user-filter/container/user-filter.component";
-import {UsersComponent} from "./modules/users/container/users.component";
 
 const routes: Routes = [
   {
     path: '',
-    component: UsersComponent
+    loadChildren: () => import('./modules/users/users.module').then(m => m.UsersModule),
   },
   {
     path: 'users',
-    component: UsersComponent
+    loadChildren: () => import('./modules/users/users.module').then(m => m.UsersModule),
   },
   {
     path: 'user-filter',
-    component: UserFilterComponent
+    loadChildren: () => import('./modules/user-filter/user-filter.module').then(m => m.UserFilterModule),
   },
 ];
 
