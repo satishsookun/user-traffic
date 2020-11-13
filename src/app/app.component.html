@@ -1,2 +1,57 @@
-<ut-main></ut-main>
+<div class="wrapper">
+
+  <header>
+    <ut-header></ut-header>
+  </header>
+
+  <div class="main-container">
+
+    <nav>
+      <ut-side-bar></ut-side-bar>
+    </nav>
+
+    <section class="content">
+      <div class="content__user-data">
+        <ul>
+          <li>
+            Users: &nbsp;<span>250</span>
+            <div class="ps-tooltip info">
+              <i class="fa fa-exclamation-circle"></i>
+              <div class="ps-tooltip__content">
+                <span class="ps-tooltip__text">
+                  The visitors count will be directly affected by the filtered date found on the top right of your page
+                </span>
+              </div>
+            </div>
+
+          </li>
+          <!--<li><span>
+            Status: &nbsp;</span>Poor
+            <div class="ps-tooltip info">
+              <i class="fa fa-exclamation-circle"></i>
+              <div class="ps-tooltip__content ps-tooltip__content_md ">
+                <span class="ps-tooltip__text">
+                  The status are based on how many users came to the site and how many has abandoned the shopping card at a given date.<br>
+                  'Excellent' if less than 33% users reached abandon shopping.<br>
+                  'Good' if less than 66% users reached abandon shopping.<br>
+                  'Poor' if more than 67% users reached abandon shopping.
+                </span>
+              </div>
+            </div>
+
+          </li>-->
+        </ul>
+      </div>
+      <div class="content__pages">
+        <div class="users">
+          <router-outlet></router-outlet>
+        </div>
+        <div class="graph">
+          <ut-graph></ut-graph>
+        </div>
+      </div>
+    </section>
+
+  </div>
+</div>
 

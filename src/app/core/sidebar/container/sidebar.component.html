@@ -1,0 +1,11 @@
+<div class="side-bar">
+    <ul class="side-bar__list">
+        <li class="side-bar__item active" *ngFor="let step of (stepsService.steps$ | async); let last = last">
+            <a routerLink="/{{step.url}}">
+              <span>{{step.name}}</span>
+            </a>
+            <span class="side-bar__sep" *ngIf="!last"></span>
+        </li>
+    </ul>
+</div>
+

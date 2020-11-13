@@ -1,1 +1,56 @@
-.header {}
+header {
+  background-color: $primary-color;
+  padding: 30px 50px;
+}
+.header {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1500px;
+  margin: 0 auto;
+  align-items: flex-end;
+  h2 {
+    font-family: $font-medium;
+    font-size: $text-lg; // 36px
+    color: $primary-text-color;
+    line-height: 45px;
+    margin: 0;
+  }
+
+  &__actions {
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 13px;
+  }
+
+  &__filter {
+    ul {
+      display: flex;
+      li {
+        margin: 0 10px;
+        width: 200px;
+        &:first-child {
+          margin: 0;
+        }
+      }
+    }
+  }
+
+  &__search {
+    width: 200px;
+  }
+  &__info {
+    padding: 10px 10px 10px 15px;
+    font-size: $text-xs;
+    position: relative;
+    background-color: rgba($primary-color, 0.1);
+    &:before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 3px;
+      height: 100%;
+      background-color: $primary-color;
+    }
+  }
+}
