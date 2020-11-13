@@ -4,7 +4,6 @@
 
   &__user-data {
     background-color: rgba($primary-color, 0.2);
-    width: fit-content;
 
     ul {
       display: flex;
@@ -12,15 +11,16 @@
       li {
         color: $primary-text-color;
         font-size: $text-sm;
-        font-family: $font-regular;
+        font-family: $font-medium;
         position: relative;
         text-align: center;
         padding: 0 30px;
-        height: 50px;
+        height: 70px;
         display: flex;
         align-items: center;
         span {
-          font-family: $font-medium;
+          font-family: $font-bold;
+          font-size: 20px;
         }
         &:first-child {
           &:before {
@@ -57,6 +57,7 @@
           right: 5px;
           font-size: 12px;
           cursor: pointer;
+          color: $secondary-text-color;
 
           i {
             transition: $transition;
@@ -72,5 +73,6 @@
   }
   &__pages {
     margin-top: 30px;
+    display: flex;
   }
 }

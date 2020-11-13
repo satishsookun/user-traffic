@@ -11,7 +11,23 @@ const routes: Routes = [
     loadChildren: () => import('./modules/users/users.module').then(m => m.UsersModule),
   },
   {
-    path: 'user-filter',
+    path: 'filter',
+    loadChildren: () => import('./modules/user-filter/user-filter.module').then(m => m.UserFilterModule),
+  },
+  {
+    path: 'waiting-time',
+    loadChildren: () => import('./modules/user-filter/user-filter.module').then(m => m.UserFilterModule),
+  },
+  {
+    path: 'ab-test',
+    loadChildren: () => import('./modules/user-filter/user-filter.module').then(m => m.UserFilterModule),
+  },
+  {
+    path: 'email-a',
+    loadChildren: () => import('./modules/user-filter/user-filter.module').then(m => m.UserFilterModule),
+  },
+  {
+    path: 'email-b',
     loadChildren: () => import('./modules/user-filter/user-filter.module').then(m => m.UserFilterModule),
   },
 ];

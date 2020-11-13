@@ -1,5 +1,5 @@
 
-export const visitors = [
+export const VISITORS = [
     {
         "id": 264065015,
         "name": "Manon Pascal"

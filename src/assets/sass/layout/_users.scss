@@ -1,8 +1,12 @@
 .users {
   display: flex;
+  width: 40%;
+
+  ut-users {
+    width: 100%;
+  }
 
   &__list {
-    width: 40%;
   }
 
   &__info {
@@ -24,16 +28,6 @@
       }
     }
   }
-
-  &__graph {
-    width: 60%;
-    padding-left: 50px;
-  }
-}
-
-.graph {
-  background-color: rgba($primary-color, 0.1);
-  height: 100%;
 }
 
 .filter {
@@ -43,6 +37,7 @@
 
   &__label {
     margin-right: 10px;
+    color: $primary-text-color;
   }
 
   &__action {
@@ -52,6 +47,7 @@
       li {
         cursor: pointer;
         transition: $transition;
+        color: $primary-text-color;
         &:first-child {
           margin-right: 10px;
         }

@@ -14,7 +14,7 @@
       <div class="content__user-data">
         <ul>
           <li>
-            <span>Users: &nbsp;</span>250
+            Users: &nbsp;<span>250</span>
             <div class="ps-tooltip info">
               <i class="fa fa-exclamation-circle"></i>
               <div class="ps-tooltip__content">
@@ -25,7 +25,7 @@
             </div>
 
           </li>
-          <li><span>
+          <!--<li><span>
             Status: &nbsp;</span>Poor
             <div class="ps-tooltip info">
               <i class="fa fa-exclamation-circle"></i>
@@ -39,11 +39,16 @@
               </div>
             </div>
 
-          </li>
+          </li>-->
         </ul>
       </div>
       <div class="content__pages">
-        <router-outlet></router-outlet>
+        <div class="users">
+          <router-outlet></router-outlet>
+        </div>
+        <div class="graph">
+          <ut-graph></ut-graph>
+        </div>
       </div>
     </section>
 
