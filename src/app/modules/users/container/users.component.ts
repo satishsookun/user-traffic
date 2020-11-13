@@ -1,4 +1,5 @@
-import {ChangeDetectionStrategy, Component} from "@angular/core";
+import {ChangeDetectionStrategy, Component, OnInit} from "@angular/core";
+import {SortDataAction} from "../models/enum-sort-date";
 
 @Component({
   selector: 'ut-users',
@@ -6,8 +7,18 @@ import {ChangeDetectionStrategy, Component} from "@angular/core";
   changeDetection: ChangeDetectionStrategy.OnPush
 })
 
-export class UsersComponent {
+export class UsersComponent implements OnInit {
+
+  public isSortedBy: string;
 
   constructor() {}
+
+  ngOnInit(): void {
+    this.isSortedBy = SortDataAction.NEW;
+  }
+
+  public onClick(action: string): void {
+    this.isSortedBy = action;
+  }
   
 }

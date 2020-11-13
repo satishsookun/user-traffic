@@ -27,6 +27,44 @@
 
   &__graph {
     width: 60%;
-    background-color: rgba($primary-color, 0.1);
+    padding-left: 50px;
+  }
+}
+
+.graph {
+  background-color: rgba($primary-color, 0.1);
+  height: 100%;
+}
+
+.filter {
+  padding: 10px 15px;
+  display: flex;
+  justify-content: flex-end;
+
+  &__label {
+    margin-right: 10px;
+  }
+
+  &__action {
+
+    ul {
+      display: flex;
+      li {
+        cursor: pointer;
+        transition: $transition;
+        &:first-child {
+          margin-right: 10px;
+        }
+
+        &.active {
+          cursor: default;
+          color: $primary-color;
+        }
+
+        &:hover {
+          color: $primary-color;
+        }
+      }
+    }
   }
 }

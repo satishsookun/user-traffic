@@ -4,6 +4,7 @@
 
   &__user-data {
     background-color: rgba($primary-color, 0.2);
+    width: fit-content;
 
     ul {
       display: flex;
@@ -49,8 +50,27 @@
             display: none;
           }
         }
+
+        .info {
+          position: absolute;
+          top: 5px;
+          right: 5px;
+          font-size: 12px;
+          cursor: pointer;
+
+          i {
+            transition: $transition;
+          }
+          &:hover {
+            i {
+              color: $primary-color;
+            }
+          }
+        }
       }
     }
   }
-  &__pages {}
+  &__pages {
+    margin-top: 30px;
+  }
 }
