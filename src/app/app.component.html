@@ -14,7 +14,7 @@
       <div class="content__user-data">
         <ul>
           <li>
-            Users: &nbsp;<span>250</span>
+            Users: &nbsp;<span>{{(visitorsService.visitors$ | async).length}}</span>
             <div class="ps-tooltip info">
               <i class="fa fa-exclamation-circle"></i>
               <div class="ps-tooltip__content">

@@ -1,4 +1,4 @@
-import {ChangeDetectionStrategy, Component, OnInit} from "@angular/core";
+import {ChangeDetectionStrategy, Component} from "@angular/core";
 import {StepsService} from "../../../shared/services/steps.service";
 
 @Component({
@@ -7,13 +7,9 @@ import {StepsService} from "../../../shared/services/steps.service";
     changeDetection: ChangeDetectionStrategy.OnPush,
 })
 
-export class SidebarComponent implements OnInit {
+export class SidebarComponent {
 
   constructor(
     public stepsService: StepsService,
   ) {}
-
-  ngOnInit(): void {
-    this.stepsService.steps$.subscribe( (steps) => console.log(steps, '<<<< steps'));
-  }
 }

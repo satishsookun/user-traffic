@@ -9,6 +9,7 @@ import {HeaderModule} from "./core/header/header.module";
 import {NgxEchartsModule} from "ngx-echarts";
 import * as echarts from 'echarts';
 import {GraphComponent} from "./features/graph/container/graph.component";
+import {VisitorsService} from "./shared/services/visitors.service";
 
 @NgModule({
   declarations: [
@@ -25,7 +26,9 @@ import {GraphComponent} from "./features/graph/container/graph.component";
       echarts,
     }),
   ],
-  providers: [],
+  providers: [
+      VisitorsService,
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

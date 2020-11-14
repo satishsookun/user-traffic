@@ -4,6 +4,7 @@ import {UsersComponent} from "./container/users.component";
 import {MatIconModule} from "@angular/material/icon";
 import {UsersRoutingModule} from "./users-routing.module";
 import {MatExpansionModule} from "@angular/material/expansion";
+import {VisitorsService} from "../../shared/services/visitors.service";
 
 @NgModule({
   entryComponents: [UsersComponent],
@@ -19,7 +20,9 @@ import {MatExpansionModule} from "@angular/material/expansion";
     MatIconModule,
     MatExpansionModule,
   ],
-  providers: [],
+  providers: [
+      VisitorsService,
+  ],
   bootstrap: []
 })
 export class UsersModule { }

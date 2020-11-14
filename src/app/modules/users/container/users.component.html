@@ -16,49 +16,54 @@
     </div>
   </div>
   <div class="accordion">
-    <mat-accordion>
-      <mat-expansion-panel>
+    <ul>
+      <li *ngFor="let visitor of (visitorsService.visitors$ | async)">
+        <mat-accordion>
+          <mat-expansion-panel>
 
-        <mat-expansion-panel-header>
+            <mat-expansion-panel-header>
 
-          <mat-panel-title>
-            satish sookun
-          </mat-panel-title>
+              <mat-panel-title>
+                {{visitor.name}}
+              </mat-panel-title>
 
-          <mat-panel-description>
-            ID: 2356845
-          </mat-panel-description>
-        </mat-expansion-panel-header>
+              <mat-panel-description>
+                ID: {{visitor.id}}
+              </mat-panel-description>
+            </mat-expansion-panel-header>
 
-        <div class="users__info">
-          <ul>
-            <li>User info:
+            <div class="users__info">
               <ul>
-                <li>Name: satish sookun</li>
-                <li>Id: 2356845</li>
+                <li>User info:
+                  <ul>
+                    <li><span>Name:</span> {{visitor.name}}</li>
+                    <li><span>Shopping Id: </span>{{visitor.steps[0][0].idShopCart}}</li>
+                  </ul>
+                </li>
+                <li>
+                  Abandoned at:
+                  <ul>
+                    <li><span>Days passed:</span> 7 days</li>
+                    <li><span>Date:</span> 2020-01-07</li>
+                    <li><span>Time:</span> 17:43:20</li>
+                  </ul>
+                </li>
+                <li>
+                  Steps reached:
+                  <ul>
+                    <li>Filter</li>
+                    <li>Dont know</li>
+                  </ul>
+                </li>
               </ul>
-            </li>
-            <li>
-              Abandoned at:
-              <ul>
-                <li>Days past from today: 7 days</li>
-                <li>Date: 2020-01-07</li>
-                <li>Time: 17:43:20</li>
-              </ul>
-            </li>
-            <li>
-              Steps reached:
-              <ul>
-                <li>Filter</li>
-                <li>Dont know</li>
-              </ul>
-            </li>
-          </ul>
-        </div>
+            </div>
 
-      </mat-expansion-panel>
+          </mat-expansion-panel>
 
-    </mat-accordion>
+        </mat-accordion>
+      </li>
+    </ul>
+
   </div>
 
 

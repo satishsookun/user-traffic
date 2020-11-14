@@ -3,6 +3,9 @@
   height: 100%;
   width: 60%;
   padding-left: 50px;
+  @media only screen and (max-width: 1200px) {
+    width: 50%;
+  }
 
   &__chart {
     background-color: rgba($primary-color, 0.1);

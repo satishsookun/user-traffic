@@ -1,5 +1,4 @@
 .content {
-  padding: 0 50px;
   width: 100%;
 
   &__user-data {
@@ -10,7 +9,7 @@
 
       li {
         color: $primary-text-color;
-        font-size: $text-sm;
+        font-size: $text-md;
         font-family: $font-medium;
         position: relative;
         text-align: center;
@@ -20,7 +19,7 @@
         align-items: center;
         span {
           font-family: $font-bold;
-          font-size: 20px;
+          font-size: $text-md;
         }
         &:first-child {
           &:before {
