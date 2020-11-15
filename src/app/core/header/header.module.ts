@@ -7,6 +7,7 @@ import {MatInputModule} from "@angular/material/input";
 import {MatNativeDateModule} from "@angular/material/core";
 import {MatIconModule} from "@angular/material/icon";
 import {SearchComponent} from "../../features/search/container/search.component";
+import {MouseEventDirective} from "./directive/mouse-event.directive";
 
 @NgModule({
     exports: [
@@ -16,6 +17,7 @@ import {SearchComponent} from "../../features/search/container/search.component"
         HeaderComponent,
         SearchComponent,
         CalendarComponent,
+        MouseEventDirective,
     ],
     imports: [
         CommonModule,

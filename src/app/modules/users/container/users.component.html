@@ -17,7 +17,7 @@
   </div>
   <div class="accordion">
     <ul>
-      <li *ngFor="let visitor of (visitorsService.visitors$ | async)">
+      <li *ngFor="let visitor of (visitorsService.visitors$ | async) | slice: minList : maxList">
         <mat-accordion>
           <mat-expansion-panel>
 
@@ -43,16 +43,17 @@
                 <li>
                   Abandoned at:
                   <ul>
-                    <li><span>Days passed:</span> 7 days</li>
-                    <li><span>Date:</span> 2020-01-07</li>
-                    <li><span>Time:</span> 17:43:20</li>
+                    <li><span>Days passed:</span> {{visitor.steps[0][0].days_passed}} days</li>
+                    <li><span>Date:</span> {{visitor.steps[0][0].date}}</li>
+                    <li><span>Time:</span> {{visitor.steps[0][0].time}}</li>
                   </ul>
                 </li>
                 <li>
                   Steps reached:
                   <ul>
-                    <li>Filter</li>
-                    <li>Dont know</li>
+                    <li *ngFor="let step of visitor.steps[0]">
+                      <span>{{step.stepName}}</span>
+                    </li>
                   </ul>
                 </li>
               </ul>
@@ -62,6 +63,12 @@
 
         </mat-accordion>
       </li>
+      <ut-pagination
+        [hidePrev]="hidePrev"
+        [hideNext]="hideNext"
+        (emitPrevious)="onPrev()"
+        (emitNext)="onNxt()">
+      </ut-pagination>
     </ul>
 
   </div>

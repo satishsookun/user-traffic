@@ -2,7 +2,6 @@ import {Injectable} from "@angular/core";
 import {VISITORS} from "../api/visitors-mock";
 import {BehaviorSubject, Observable} from "rxjs";
 import {ApiStepType, VISITORSTEP} from "../api/visitor-mock";
-import moment = require("moment");
 
 export enum STEP_ID {
   ID_83030 = '83030',
@@ -25,7 +24,7 @@ export interface StepType {
     idShopCart: string;
     date: string;
     time: string;
-    days_passed: string;
+    days_passed: number;
 }
 
 @Injectable()
@@ -57,21 +56,19 @@ export class VisitorsService {
   }
 
   private manipulateStepData(stepData: ApiStepType[]): StepType[] {
-    console.log(stepData, '<<< stepData')
       let buildStep: StepType[] = [];
       stepData.forEach( (data: ApiStepType) => {
-        const test = {
+        const visitorData = {
           stepId: data.step,
           stepName: this.handleStepName(data.step),
           idShopCart: data.data.idShopCart,
           date: this.handleStepDate(data.date),
           time: this.handleStepTime(data.date),
           days_passed: this.handlePassedDays(this.handleStepDate(data.date)),
-        }
+        };
 
-          buildStep.push(test);
+          buildStep.push(visitorData);
       });
-      console.log(buildStep, 'before return')
       return buildStep;
   }
 
@@ -104,8 +101,13 @@ export class VisitorsService {
     return dateStr[1];
   }
 
-  private handlePassedDays(date: string) {
-      const days = moment().diff("2015-06-02", "days");
+  private handlePassedDays(date: string): number {
+      const todayDate = new Date;
+      const pastDate = new Date(date);
+      const difTime = todayDate.getTime() - pastDate.getTime();
+      let daysCount = difTime / (1000 * 3600 * 24);
+      daysCount = Math.ceil(daysCount);
+      return daysCount;
   }
 
   public get visitors$(): Observable<VisitorType[]> {

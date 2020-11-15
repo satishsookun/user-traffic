@@ -13,7 +13,7 @@ export const VISITORSTEP = [
         264065015: [
             {
                 "step": "83030",
-                "date": "2020-01-07 17:43:17",
+                "date": "2020-04-07 13:40:17",
                 "data": {
                     "idShopCart": "14783785"
                 },
@@ -22,7 +22,7 @@ export const VISITORSTEP = [
             },
             {
                 "step": "83031",
-                "date": "2020-01-07 17:43:17",
+                "date": "2020-04-07 13:45:17",
                 "data": {
                     "idShopCart": "14783785"
                 },
@@ -35,7 +35,7 @@ export const VISITORSTEP = [
         264065169: [
             {
                 "step": "83030",
-                "date": "2020-01-07 17:43:19",
+                "date": "2020-09-07 08:43:19",
                 "data": {
                     "idShopCart": "14604329"
                 },
@@ -44,7 +44,16 @@ export const VISITORSTEP = [
             },
             {
                 "step": "83031",
-                "date": "2020-01-07 17:43:19",
+                "date": "2020-09-07 08:48:19",
+                "data": {
+                    "idShopCart": "14604329"
+                },
+                "status": "0",
+                "parent": "83030"
+            },
+            {
+                "step": "83032",
+                "date": "2020-09-07 08:56:19",
                 "data": {
                     "idShopCart": "14604329"
                 },
@@ -57,7 +66,7 @@ export const VISITORSTEP = [
         264061720: [
             {
                 "step": "83030",
-                "date": "2020-01-07 17:43:20",
+                "date": "2020-11-07 13:35:20",
                 "data": {
                     "idShopCart": "14783603"
                 },
@@ -66,7 +75,7 @@ export const VISITORSTEP = [
             },
             {
                 "step": "83031",
-                "date": "2020-01-07 17:43:20",
+                "date": "2020-11-07 13:43:20",
                 "data": {
                     "idShopCart": "14783603"
                 },
@@ -79,7 +88,7 @@ export const VISITORSTEP = [
         264064987: [
             {
                 "step": "83030",
-                "date": "2020-01-07 17:43:20",
+                "date": "2020-09-07 14:30:20",
                 "data": {
                     "idShopCart": "14163909"
                 },
@@ -88,7 +97,7 @@ export const VISITORSTEP = [
             },
             {
                 "step": "83031",
-                "date": "2020-01-07 17:43:20",
+                "date": "2020-01-07 14:43:20",
                 "data": {
                     "idShopCart": "14163909"
                 },
@@ -101,7 +110,7 @@ export const VISITORSTEP = [
         264065136: [
             {
                 "step": "83030",
-                "date": "2020-01-07 17:43:21",
+                "date": "2019-01-07 17:43:21",
                 "data": {
                     "idShopCart": "14691202"
                 },
@@ -110,7 +119,7 @@ export const VISITORSTEP = [
             },
             {
                 "step": "83031",
-                "date": "2020-01-07 17:43:21",
+                "date": "2019-01-07 17:44:21",
                 "data": {
                     "idShopCart": "14691202"
                 },
@@ -123,7 +132,7 @@ export const VISITORSTEP = [
         264065687: [
             {
                 "step": "83030",
-                "date": "2020-01-07 17:45:19",
+                "date": "2020-05-07 17:30:19",
                 "data": {
                     "idShopCart": "11258289"
                 },
@@ -132,7 +141,7 @@ export const VISITORSTEP = [
             },
             {
                 "step": "83031",
-                "date": "2020-01-07 17:45:19",
+                "date": "2020-05-07 17:45:19",
                 "data": {
                     "idShopCart": "11258289"
                 },
@@ -145,7 +154,7 @@ export const VISITORSTEP = [
         264065646: [
             {
                 "step": "83030",
-                "date": "2020-01-07 17:45:31",
+                "date": "2020-06-08 09:45:31",
                 "data": {
                     "idShopCart": "14590734"
                 },
@@ -154,7 +163,7 @@ export const VISITORSTEP = [
             },
             {
                 "step": "83031",
-                "date": "2020-01-07 17:45:31",
+                "date": "2020-06-08 09:47:31",
                 "data": {
                     "idShopCart": "14590734"
                 },
@@ -167,7 +176,7 @@ export const VISITORSTEP = [
         264066128: [
             {
                 "step": "83030",
-                "date": "2020-01-07 17:45:33",
+                "date": "2020-10-05 17:45:33",
                 "data": {
                     "idShopCart": "14203393"
                 },
@@ -176,7 +185,7 @@ export const VISITORSTEP = [
             },
             {
                 "step": "83031",
-                "date": "2020-01-07 17:45:33",
+                "date": "2020-10-05 17:48:33",
                 "data": {
                     "idShopCart": "14203393"
                 },
@@ -189,7 +198,7 @@ export const VISITORSTEP = [
         264065777: [
             {
                 "step": "83030",
-                "date": "2020-01-07 17:45:35",
+                "date": "2020-04-08 17:36:35",
                 "data": {
                     "idShopCart": "14680303"
                 },
@@ -198,7 +207,7 @@ export const VISITORSTEP = [
             },
             {
                 "step": "83031",
-                "date": "2020-01-07 17:45:36",
+                "date": "2020-04-08 17:45:36",
                 "data": {
                     "idShopCart": "14680303"
                 },
@@ -211,7 +220,7 @@ export const VISITORSTEP = [
         264065916: [
             {
                 "step": "83030",
-                "date": "2020-01-07 17:45:35",
+                "date": "2020-02-16 10:45:35",
                 "data": {
                     "idShopCart": "14680303"
                 },
@@ -220,7 +229,7 @@ export const VISITORSTEP = [
             },
             {
                 "step": "83031",
-                "date": "2020-01-07 17:45:36",
+                "date": "2020-02-16 10:46:36",
                 "data": {
                     "idShopCart": "14680303"
                 },
@@ -233,7 +242,7 @@ export const VISITORSTEP = [
         264061271: [
             {
                 "step": "83030",
-                "date": "2020-01-07 17:45:35",
+                "date": "2020-06-16 17:41:35",
                 "data": {
                     "idShopCart": "14680303"
                 },
@@ -242,7 +251,7 @@ export const VISITORSTEP = [
             },
             {
                 "step": "83031",
-                "date": "2020-01-07 17:45:36",
+                "date": "2020-06-16 17:45:36",
                 "data": {
                     "idShopCart": "14680303"
                 },
@@ -255,7 +264,7 @@ export const VISITORSTEP = [
         264066263: [
             {
                 "step": "83030",
-                "date": "2020-01-07 17:45:35",
+                "date": "2020-11-07 09:30:35",
                 "data": {
                     "idShopCart": "14680303"
                 },
@@ -264,7 +273,7 @@ export const VISITORSTEP = [
             },
             {
                 "step": "83031",
-                "date": "2020-01-07 17:45:36",
+                "date": "2020-11-07 09:45:36",
                 "data": {
                     "idShopCart": "14680303"
                 },
@@ -277,7 +286,7 @@ export const VISITORSTEP = [
         264058699: [
             {
                 "step": "83030",
-                "date": "2020-01-07 17:45:35",
+                "date": "2020-11-21 17:30:35",
                 "data": {
                     "idShopCart": "14680303"
                 },
@@ -286,7 +295,7 @@ export const VISITORSTEP = [
             },
             {
                 "step": "83031",
-                "date": "2020-01-07 17:45:36",
+                "date": "2020-11-21 17:45:36",
                 "data": {
                     "idShopCart": "14680303"
                 },
@@ -299,7 +308,7 @@ export const VISITORSTEP = [
         264067510: [
             {
                 "step": "83030",
-                "date": "2020-01-07 17:45:35",
+                "date": "2020-08-07 17:45:35",
                 "data": {
                     "idShopCart": "14680303"
                 },
@@ -308,7 +317,7 @@ export const VISITORSTEP = [
             },
             {
                 "step": "83031",
-                "date": "2020-01-07 17:45:36",
+                "date": "2020-08-07 17:45:36",
                 "data": {
                     "idShopCart": "14680303"
                 },
@@ -321,7 +330,7 @@ export const VISITORSTEP = [
         264067816: [
             {
                 "step": "83030",
-                "date": "2020-01-07 17:45:35",
+                "date": "2020-08-20 17:45:35",
                 "data": {
                     "idShopCart": "14680303"
                 },
@@ -330,7 +339,7 @@ export const VISITORSTEP = [
             },
             {
                 "step": "83031",
-                "date": "2020-01-07 17:45:36",
+                "date": "2020-08-20 17:45:36",
                 "data": {
                     "idShopCart": "14680303"
                 },
@@ -343,7 +352,7 @@ export const VISITORSTEP = [
         264065400: [
             {
                 "step": "83030",
-                "date": "2020-01-07 17:45:35",
+                "date": "2020-08-19 17:45:35",
                 "data": {
                     "idShopCart": "14680303"
                 },
@@ -352,7 +361,7 @@ export const VISITORSTEP = [
             },
             {
                 "step": "83031",
-                "date": "2020-01-07 17:45:36",
+                "date": "2020-08-19 17:45:36",
                 "data": {
                     "idShopCart": "14680303"
                 },
@@ -365,7 +374,7 @@ export const VISITORSTEP = [
         264064233: [
             {
                 "step": "83030",
-                "date": "2020-01-07 17:45:35",
+                "date": "2020-05-07 17:45:35",
                 "data": {
                     "idShopCart": "14680303"
                 },
@@ -374,7 +383,7 @@ export const VISITORSTEP = [
             },
             {
                 "step": "83031",
-                "date": "2020-01-07 17:45:36",
+                "date": "2020-05-07 17:45:36",
                 "data": {
                     "idShopCart": "14680303"
                 },

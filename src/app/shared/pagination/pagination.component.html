@@ -1,0 +1,10 @@
+<div class="pagination">
+    <ul>
+        <li (click)="onPrevious()" *ngIf="!hidePrev">
+            <i class="fa fa-angle-left"></i>
+        </li>
+        <li (click)="onNext()" *ngIf="!hideNext">
+            <i class="fa fa-angle-right"></i>
+        </li>
+    </ul>
+</div>

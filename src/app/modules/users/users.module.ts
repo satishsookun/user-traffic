@@ -5,6 +5,7 @@ import {MatIconModule} from "@angular/material/icon";
 import {UsersRoutingModule} from "./users-routing.module";
 import {MatExpansionModule} from "@angular/material/expansion";
 import {VisitorsService} from "../../shared/services/visitors.service";
+import {PaginationComponent} from "../../shared/pagination/pagination.component";
 
 @NgModule({
   entryComponents: [UsersComponent],
@@ -12,7 +13,8 @@ import {VisitorsService} from "../../shared/services/visitors.service";
     UsersComponent
   ],
   declarations: [
-    UsersComponent
+    UsersComponent,
+    PaginationComponent,
   ],
   imports: [
     CommonModule,
