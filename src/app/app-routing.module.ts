@@ -12,7 +12,7 @@ const routes: Routes = [
   },
   {
     path: 'filter',
-    loadChildren: () => import('./modules/user-filter/user-filter.module').then(m => m.UserFilterModule),
+      loadChildren: () => import('./modules/users/users.module').then(m => m.UsersModule),
   },
   {
     path: 'waiting-time',

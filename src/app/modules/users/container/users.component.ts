@@ -32,7 +32,7 @@ export class UsersComponent implements OnInit {
         this.hideNext = false;
         this.isSortedBy = SortDataAction.NEW;
         this.visitorsService.visitors$.subscribe((visitor) => {
-            console.log(visitor, 'visitors')
+            console.log(visitor, 'SSUBBSS')
             this.totalListCount = visitor.length;
         });
     }

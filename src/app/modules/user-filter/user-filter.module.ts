@@ -8,7 +8,7 @@ import {UserFilterRoutingModule} from "./user-filter-routing.module";
     UserFilterComponent
   ],
   declarations: [
-    UserFilterComponent
+    UserFilterComponent,
   ],
   imports: [
     CommonModule,

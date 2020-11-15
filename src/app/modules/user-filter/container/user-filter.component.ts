@@ -1,6 +1,4 @@
 import {ChangeDetectionStrategy, Component} from "@angular/core";
-import {ActivatedRoute} from "@angular/router";
-
 
 @Component({
   selector: 'ut-user-filtered',
@@ -9,7 +7,5 @@ import {ActivatedRoute} from "@angular/router";
 })
 
 export class UserFilterComponent {
-  constructor(
-    private route: ActivatedRoute,
-  ) {}
+  constructor() {}
 }
