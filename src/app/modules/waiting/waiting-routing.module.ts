@@ -1,6 +1,6 @@
 import {RouterModule, Routes} from "@angular/router";
 import {NgModule} from "@angular/core";
-import {WaitingComponent} from "./waiting.component";
+import {WaitingComponent} from "./container/waiting.component";
 
 
 const routes: Routes = [

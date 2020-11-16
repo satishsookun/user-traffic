@@ -3,6 +3,7 @@ import {CommonModule} from "@angular/common";
 import {EmailAComponent} from "./container/email-a.component";
 import {EmailARoutingModule} from "./email-a-routing.module";
 import {MatDialogModule} from "@angular/material/dialog";
+import {EmailADialogComponent} from "./ui/dialog/email-a-dialog.component";
 
 @NgModule({
   exports: [
@@ -10,6 +11,7 @@ import {MatDialogModule} from "@angular/material/dialog";
   ],
   declarations: [
     EmailAComponent,
+    EmailADialogComponent,
   ],
   imports: [
     CommonModule,

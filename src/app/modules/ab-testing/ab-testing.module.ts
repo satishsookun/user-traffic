@@ -1,6 +1,6 @@
 import {NgModule} from "@angular/core";
 import {CommonModule} from "@angular/common";
-import {AbTestingComponent} from "./ab-testing.component";
+import {AbTestingComponent} from "./container/ab-testing.component";
 import {AbTestingRoutingModule} from "./ab-testing-routing.module";
 
 @NgModule({

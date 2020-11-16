@@ -1,6 +1,6 @@
 import {RouterModule, Routes} from "@angular/router";
 import {NgModule} from "@angular/core";
-import {AbTestingComponent} from "./ab-testing.component";
+import {AbTestingComponent} from "./container/ab-testing.component";
 
 
 const routes: Routes = [

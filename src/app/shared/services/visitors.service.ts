@@ -2,7 +2,6 @@ import {Injectable} from "@angular/core";
 import {VISITORS} from "../api/visitors-mock";
 import {BehaviorSubject, Observable} from "rxjs";
 import {ApiStepType, VISITORSTEP} from "../api/visitor-mock";
-import {Router} from "@angular/router";
 
 export enum STEP_ID {
   ID_83030 = '83030',
@@ -33,18 +32,14 @@ export class VisitorsService {
 
   private _visitors: any;
   private _visitors$: BehaviorSubject<VisitorType[]>;
-
   private _visitorStep: any;
 
-  constructor(
-      private router: Router,
-  ) {
+
+  constructor() {
     this._visitorStep = VISITORSTEP;
     this._visitors = VISITORS;
     this._visitors$ = new BehaviorSubject(this._visitors);
-  // this.mergeVisitorSteps();
     this.mergeVisitorSteps();
-    console.log(this.router.url, 'route')
   }
 
     /**
@@ -63,8 +58,8 @@ export class VisitorsService {
 
   private manipulateStepData(stepData: ApiStepType[]): StepType[] {
       let buildStep: StepType[] = [];
-
       stepData.forEach( (data: ApiStepType) => {
+
         const visitorData = {
           stepId: data.step,
           stepName: this.handleStepName(data.step),
@@ -120,9 +115,4 @@ export class VisitorsService {
   public get visitors$(): Observable<VisitorType[]> {
     return this._visitors$.asObservable();
   }
-}
-
-export enum USER_ROUTE {
-    USERS = 'users',
-    FILTER = 'filter'
 }

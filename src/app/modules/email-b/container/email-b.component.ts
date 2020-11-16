@@ -1,4 +1,6 @@
 import {ChangeDetectionStrategy, Component} from "@angular/core";
+import {MatDialog} from "@angular/material/dialog";
+import {EmailBDialogComponent} from "../ui/dialog/email-b-dialog.component";
 
 @Component({
   selector: 'ut-email-b',
@@ -8,9 +10,14 @@ import {ChangeDetectionStrategy, Component} from "@angular/core";
 
 export class EmailBComponent {
 
-  constructor() {}
+    constructor(
+        public dialog: MatDialog
+    ) {}
 
-  public openDialog(): void {
-
-  }
+    public openDialog(): void {
+        this.dialog.open(EmailBDialogComponent, {
+            width: '400px',
+            height: 'auto',
+        });
+    }
 }

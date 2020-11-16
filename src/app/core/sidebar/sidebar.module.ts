@@ -3,6 +3,7 @@ import {CommonModule} from "@angular/common";
 import {SidebarComponent} from "./container/sidebar.component";
 import {AppRoutingModule} from "../../app-routing.module";
 import {StepsService} from "../../shared/services/steps.service";
+import {RouterModule} from "@angular/router";
 
 @NgModule({
     exports: [
@@ -14,6 +15,7 @@ import {StepsService} from "../../shared/services/steps.service";
     imports: [
         AppRoutingModule,
         CommonModule,
+        RouterModule,
     ],
     providers: [
       StepsService,

@@ -9,8 +9,8 @@ import {HeaderModule} from "./core/header/header.module";
 import {NgxEchartsModule} from "ngx-echarts";
 import * as echarts from 'echarts';
 import {GraphComponent} from "./features/graph/container/graph.component";
-import {VisitorsService} from "./shared/services/visitors.service";
 import {MouseEventDirective} from "./shared/directive/mouse-event.directive";
+import {VisitorsCountService} from "./shared/services/visitors-count.service";
 
 @NgModule({
     declarations: [
@@ -29,7 +29,7 @@ import {MouseEventDirective} from "./shared/directive/mouse-event.directive";
         }),
     ],
     providers: [
-        VisitorsService,
+        VisitorsCountService,
     ],
     bootstrap: [AppComponent]
 })

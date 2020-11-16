@@ -17,8 +17,8 @@
   </div>
   <div class="accordion">
     <ul>
-      <li *ngFor="let visitor of (visitorsService.visitors$ | async) | slice: minList : maxList">
-        <ng-container *ngIf="visitor.steps[0].length > 1">
+      <li *ngFor="let visitor of visitors | slice: minList : maxList">
+        <ng-container>
           <mat-accordion>
             <mat-expansion-panel>
 

@@ -1,6 +1,11 @@
-import {ChangeDetectionStrategy, ChangeDetectorRef, Component, OnInit} from "@angular/core";
+import {ChangeDetectionStrategy, ChangeDetectorRef, Component, OnDestroy, OnInit} from "@angular/core";
 import {SortDataAction} from "../models/enum-sort-date";
-import {VisitorsService} from "../../../shared/services/visitors.service";
+import {VisitorsService, VisitorType} from "../../../shared/services/visitors.service";
+import {filter, find} from "rxjs/operators";
+import {Subscriber} from "rxjs/internal-compatibility";
+import {Subscription} from "rxjs/internal/Subscription";
+import {Router} from "@angular/router";
+import {VisitorsCountService} from "../../../shared/services/visitors-count.service";
 
 @Component({
     selector: 'ut-users',
@@ -9,7 +14,7 @@ import {VisitorsService} from "../../../shared/services/visitors.service";
 })
 
 
-export class UsersComponent implements OnInit {
+export class UsersComponent implements OnInit, OnDestroy {
 
     public isSortedBy: string;
     public minList: number;
@@ -17,11 +22,15 @@ export class UsersComponent implements OnInit {
     public hidePrev: boolean;
     public hideNext: boolean;
     public totalListCount: number;
+    private visitorSubs: Subscription;
+    public visitors: VisitorType[];
 
 
     constructor(
         public visitorsService: VisitorsService,
+        public visitorsCountService: VisitorsCountService,
         private changeRef: ChangeDetectorRef,
+        private router: Router,
     ) {
     }
 
@@ -31,10 +40,28 @@ export class UsersComponent implements OnInit {
         this.hidePrev = true;
         this.hideNext = false;
         this.isSortedBy = SortDataAction.NEW;
-        this.visitorsService.visitors$.subscribe((visitor) => {
-            console.log(visitor, 'SSUBBSS')
+        this.visitorSubs = this.visitorsService.visitors$
+            .subscribe((visitor) => {
+                this.filterData(visitor);
             this.totalListCount = visitor.length;
         });
+    }
+
+    public filterData(data: VisitorType[]) {
+        const url = this.router.url;
+        const step = (url === '/users' ? '83030' : '83031');
+        const userStepsFiltered = [];
+        data.forEach( (item) => {
+            const filtered = item.steps[0].filter( (steps) => steps.stepId === step);
+            if (filtered.length > 0) userStepsFiltered.push(item);
+        })
+        this.visitors = [...userStepsFiltered];
+        this.visitorsCountService.visitorCount = this.visitors.length;
+        this.changeRef.markForCheck();
+    }
+
+    ngOnDestroy(): void {
+        this.visitorSubs.unsubscribe();
     }
 
     public onClick(action: string): void {
