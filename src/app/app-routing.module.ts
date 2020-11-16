@@ -16,19 +16,19 @@ const routes: Routes = [
   },
   {
     path: 'waiting-time',
-    loadChildren: () => import('./modules/user-filter/user-filter.module').then(m => m.UserFilterModule),
+    loadChildren: () => import('./modules/waiting/waiting.module').then(m => m.WaitingModule),
   },
   {
     path: 'ab-test',
-    loadChildren: () => import('./modules/user-filter/user-filter.module').then(m => m.UserFilterModule),
+    loadChildren: () => import('./modules/ab-testing/ab-testing.module').then(m => m.AbTestingModule),
   },
   {
     path: 'email-a',
-    loadChildren: () => import('./modules/user-filter/user-filter.module').then(m => m.UserFilterModule),
+    loadChildren: () => import('./modules/email-a/email-a.module').then(m => m.EmailAModule),
   },
   {
     path: 'email-b',
-    loadChildren: () => import('./modules/user-filter/user-filter.module').then(m => m.UserFilterModule),
+    loadChildren: () => import('./modules/email-b/email-b.module').then(m => m.EmailBModule),
   },
 ];
 
