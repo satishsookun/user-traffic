@@ -32,8 +32,8 @@ export class VisitorsService {
 
   private _visitors: any;
   private _visitors$: BehaviorSubject<VisitorType[]>;
-
   private _visitorStep: any;
+
 
   constructor() {
     this._visitorStep = VISITORSTEP;
@@ -46,18 +46,20 @@ export class VisitorsService {
      * merge visitors with their respective steps
      */
   private mergeVisitorSteps() {
+
     this._visitors.forEach( (visitor, index) => {
         this._visitors[index].steps = this._visitorStep
             .filter( (stepsId) => stepsId[visitor.id])
             .map( (item) => this.manipulateStepData(item[visitor.id]));
     });
-
     this._visitors$.next(this._visitors);
   }
+
 
   private manipulateStepData(stepData: ApiStepType[]): StepType[] {
       let buildStep: StepType[] = [];
       stepData.forEach( (data: ApiStepType) => {
+
         const visitorData = {
           stepId: data.step,
           stepName: this.handleStepName(data.step),
@@ -66,9 +68,9 @@ export class VisitorsService {
           time: this.handleStepTime(data.date),
           days_passed: this.handlePassedDays(this.handleStepDate(data.date)),
         };
-
-          buildStep.push(visitorData);
+        buildStep.push(visitorData);
       });
+
       return buildStep;
   }
 

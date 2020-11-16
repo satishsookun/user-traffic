@@ -1,6 +1,6 @@
 <div class="wrapper">
 
-  <header>
+  <header class="mouseEvent">
     <ut-header></ut-header>
   </header>
 
@@ -12,9 +12,9 @@
 
     <section class="content">
       <div class="content__user-data">
-        <ul>
-          <li>
-            Users: &nbsp;<span>{{(visitorsService.visitors$ | async).length}}</span>
+        <ul [ngSwitch]="router.url">
+          <li *ngSwitchCase="'/users'">
+            Users:&nbsp;<span>{{(visitorsCountService.visitorCount$ | async)}}</span>
             <div class="ps-tooltip info">
               <i class="fa fa-exclamation-circle"></i>
               <div class="ps-tooltip__content">
@@ -23,23 +23,25 @@
                 </span>
               </div>
             </div>
-
           </li>
-          <!--<li><span>
-            Status: &nbsp;</span>Poor
-            <div class="ps-tooltip info">
-              <i class="fa fa-exclamation-circle"></i>
-              <div class="ps-tooltip__content ps-tooltip__content_md ">
-                <span class="ps-tooltip__text">
-                  The status are based on how many users came to the site and how many has abandoned the shopping card at a given date.<br>
-                  'Excellent' if less than 33% users reached abandon shopping.<br>
-                  'Good' if less than 66% users reached abandon shopping.<br>
-                  'Poor' if more than 67% users reached abandon shopping.
-                </span>
-              </div>
-            </div>
-
-          </li>-->
+          <li *ngSwitchCase="'/filter'">
+            Users:&nbsp;<span>{{(visitorsCountService.visitorCount$ | async)}}</span>
+          </li>
+          <li *ngSwitchCase="'/waiting-time'">
+            Waiting period time
+          </li>
+          <li *ngSwitchCase="'/ab-test'">
+            A/B testing
+          </li>
+          <li *ngSwitchCase="'/email-a'">
+            Email A
+          </li>
+          <li *ngSwitchCase="'/email-b'">
+            Email B
+          </li>
+          <li *ngSwitchDefault>
+            Page not found
+          </li>
         </ul>
       </div>
       <div class="content__pages">

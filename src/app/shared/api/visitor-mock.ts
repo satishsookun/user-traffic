@@ -20,15 +20,6 @@ export const VISITORSTEP = [
                 "status": "0",
                 "parent": "0"
             },
-            {
-                "step": "83031",
-                "date": "2020-04-07 13:45:17",
-                "data": {
-                    "idShopCart": "14783785"
-                },
-                "status": "0",
-                "parent": "83030"
-            }
         ]
     },
     {
@@ -73,15 +64,6 @@ export const VISITORSTEP = [
                 "status": "0",
                 "parent": "0"
             },
-            {
-                "step": "83031",
-                "date": "2020-11-07 13:43:20",
-                "data": {
-                    "idShopCart": "14783603"
-                },
-                "status": "0",
-                "parent": "83030"
-            }
         ]
     },
     {

@@ -10,18 +10,6 @@ nav {
     justify-content: center;
     flex-direction: column;
 
-    &.active {
-      a {
-        color: $white-color;
-        &:before {
-          width: 5px;
-        }
-        &:after {
-          width: 100%;
-        }
-      }
-    }
-
     a {
       position: relative;
       z-index: 2;
@@ -65,6 +53,16 @@ nav {
       }
 
       &:hover {
+        color: $white-color;
+        &:before {
+          width: 5px;
+        }
+        &:after {
+          width: 100%;
+        }
+      }
+
+      &.active {
         color: $white-color;
         &:before {
           width: 5px;

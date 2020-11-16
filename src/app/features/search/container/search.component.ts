@@ -8,11 +8,20 @@ import {ChangeDetectionStrategy, Component} from "@angular/core";
 
 export class SearchComponent {
 
-  public value: string;
-  public faCoffee: any;
+  public value: boolean;
+  public searchVal: string;
 
   constructor() {
-    this.value = 'testttt';
+    this.value = false;
+    this.searchVal = '';
 
   }
+
+    onKeyUp() {
+      this.value = true;
+    }
+
+    onBlur() {
+      this.value = false;
+    }
 }

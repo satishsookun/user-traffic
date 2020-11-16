@@ -1,12 +1,12 @@
 import {RouterModule, Routes} from "@angular/router";
-import {UserFilterComponent} from "./container/user-filter.component";
 import {NgModule} from "@angular/core";
+import {EmailAComponent} from "./container/email-a.component";
 
 
 const routes: Routes = [
   {
     path: '',
-    component: UserFilterComponent,
+    component: EmailAComponent,
   }
 ];
 
@@ -15,4 +15,4 @@ const routes: Routes = [
   exports: [RouterModule],
 })
 
-export class UserFilterRoutingModule {}
+export class EmailARoutingModule {}

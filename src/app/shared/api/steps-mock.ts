@@ -16,7 +16,7 @@ export const STEPS = {
         'flowchart_id': 'created_operator_1',
         'step_id': '83031',
         'class': 'filtre',
-        'name': 'Filtre',
+        'name': 'Filter',
         'url': '/filter',
         'type': 'boxfiltre_3',
         'parents': {
@@ -80,7 +80,7 @@ export const STEPS = {
         'flowchart_id': 'created_operator_3',
         'step_id': '83033',
         'class': 'action',
-        'name': 'AB Test',
+        'name': 'A/B Test',
         'url': '/ab-test',
         'type': 'boxabtest',
         'parents': {

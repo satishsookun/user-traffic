@@ -4,8 +4,40 @@ header {
   position: fixed;
   width: 100%;
   z-index: 3;
+  transition: $transition;
+  border-bottom: 3px solid transparent;
   @media only screen and (max-width: 1200px) {
     padding: 30px;
+  }
+  &.collapse {
+    padding: 15px 50px;
+    background-color: $tertiary-color;
+    border-bottom: 3px solid $primary-color;
+    @media only screen and (max-width: 1200px) {
+      padding: 15px 30px;
+    }
+    .header{
+      justify-content: flex-end;
+      &__title {
+        display: none;
+      }
+      &__actions {
+        margin-bottom: 0;
+      }
+    }
+    .mat-form-field-appearance-fill .mat-form-field-flex {
+      background-color: $white-color;
+    }
+    .mat-input-element {
+      caret-color: $primary-text-color;
+    }
+    .mat-calendar-body-selected {
+      background-color: $primary-color;
+    }
+
+    .mat-datepicker-toggle-active {
+      color: $primary-color;
+    }
   }
 }
 .header {
