@@ -40,7 +40,15 @@
             Email B
           </li>
           <li *ngSwitchDefault>
-            Page not found
+            Users:&nbsp;<span>{{(visitorsCountService.visitorCount$ | async)}}</span>
+            <div class="ps-tooltip info">
+              <i class="fa fa-exclamation-circle"></i>
+              <div class="ps-tooltip__content">
+                <span class="ps-tooltip__text">
+                  The visitors count will be directly affected by the filtered date found on the top right of your page
+                </span>
+              </div>
+            </div>
           </li>
         </ul>
       </div>

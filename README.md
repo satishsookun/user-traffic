@@ -8,10 +8,15 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
     Clone project
         - git clone https://github.com/satishsookun/user-traffic.git
     After cloning the project
+        - cd user-traffic
         - npm i
         - ng serve -o
         
 ## Project
+
+> Single page application
+
+  This project is a single page web app. There will be no browser refresh on navigation as the lazy loading will only load the module.
 
 > Web app component
     
@@ -39,3 +44,16 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 > Responsiveness
     
     - The web app is only responsive on Desktop (>= 1024px)
+    
+> Color Theming
+
+    - There are to main color code were used, Green come from the theme color of shopimind and the dark gray was selected as it gives a good contrast where we can outstand important section on the page.
+    
+> SASS Pre-processing
+
+    - SASS was used to style the project with the advance feature provided such as variable, nesting, mixing and so on ...
+    - With the help of `SCSS Variables` we can easily change the `Theme color` of the page to adapt to client Corporate
+    
+> JSON API 
+  
+    - For steps provided by user, I was not able to get the complete idea of step 3, 4, 5 as no user reached these steps in the Json provided, but still I tried to do something out of it. 
