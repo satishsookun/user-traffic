@@ -1,0 +1,33 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: $font-regular;
+  font-size: 14px;
+}
+
+body, html, p, span, ul, li, a, div, section, nav, h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  &:hover, &:active, &:focus {
+    text-decoration: none;
+    color: initial;
+  }
+}
+
+button {
+  border: none;
+  background-color: transparent;
+  &:hover, &:active, &:focus {
+    outline: none;
+  }
+}

@@ -1,0 +1,15 @@
+.waiting {
+  &__title {
+    font-size: 20px;
+    color: $primary-text-color;
+    font-family: $font-medium;
+    margin-bottom: 20px !important;
+    span {
+      font-family: $font-bold;
+    }
+  }
+  p {
+    font-size: $text-sm;
+    line-height: 32px;
+  }
+}

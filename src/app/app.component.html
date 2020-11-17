@@ -1,1 +1,67 @@
-user traffic has been push to git hub
+<div class="wrapper">
+
+  <header class="mouseEvent">
+    <ut-header></ut-header>
+  </header>
+
+  <div class="main-container">
+
+    <nav>
+      <ut-side-bar></ut-side-bar>
+    </nav>
+
+    <section class="content">
+      <div class="content__user-data">
+        <ul [ngSwitch]="router.url">
+          <li *ngSwitchCase="'/users'">
+            Users:&nbsp;<span>{{(visitorsCountService.visitorCount$ | async)}}</span>
+            <div class="ps-tooltip info">
+              <i class="fa fa-exclamation-circle"></i>
+              <div class="ps-tooltip__content">
+                <span class="ps-tooltip__text">
+                  The visitors count will be directly affected by the filtered date found on the top right of your page
+                </span>
+              </div>
+            </div>
+          </li>
+          <li *ngSwitchCase="'/filter'">
+            Users:&nbsp;<span>{{(visitorsCountService.visitorCount$ | async)}}</span>
+          </li>
+          <li *ngSwitchCase="'/waiting-time'">
+            Waiting period time
+          </li>
+          <li *ngSwitchCase="'/ab-test'">
+            A/B testing
+          </li>
+          <li *ngSwitchCase="'/email-a'">
+            Email A
+          </li>
+          <li *ngSwitchCase="'/email-b'">
+            Email B
+          </li>
+          <li *ngSwitchDefault>
+            Users:&nbsp;<span>{{(visitorsCountService.visitorCount$ | async)}}</span>
+            <div class="ps-tooltip info">
+              <i class="fa fa-exclamation-circle"></i>
+              <div class="ps-tooltip__content">
+                <span class="ps-tooltip__text">
+                  The visitors count will be directly affected by the filtered date found on the top right of your page
+                </span>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+      <div class="content__pages">
+        <div class="users">
+          <router-outlet></router-outlet>
+        </div>
+        <div class="graph">
+          <ut-graph></ut-graph>
+        </div>
+      </div>
+    </section>
+
+  </div>
+</div>
+

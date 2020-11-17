@@ -1,0 +1,10 @@
+<div class="search">
+  <mat-form-field class="search__input" appearance="fill">
+    <mat-label>Search by user name</mat-label>
+    <input matInput type="text" (keyup)="onKeyUp()" (blur)="onBlur()">
+    <button mat-button *ngIf="value" matSuffix mat-icon-button aria-label="Clear" (click)="searchVal=''">
+      <mat-icon>close</mat-icon>
+    </button>
+  </mat-form-field>
+  <div class="search__result"></div>
+</div>
