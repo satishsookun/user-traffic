@@ -4,12 +4,11 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 
 ## Installation of project
     Go to github
-        - https://github.com/satishsookun/user-traffic/tree/alpha
+        - https://github.com/satishsookun/user-traffic/tree/master
     Clone project
         - git clone https://github.com/satishsookun/user-traffic.git
     After cloning the project
         - cd user-traffic
-        - git checkout alpha // To change branch from main to alpha (alpha contained all implementation)
         - npm i
         - ng serve -o
         

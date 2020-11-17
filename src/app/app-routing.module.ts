@@ -3,10 +3,6 @@ import { Routes, RouterModule } from '@angular/router';
 
 const routes: Routes = [
   {
-    path: '',
-    loadChildren: () => import('./modules/users/users.module').then(m => m.UsersModule),
-  },
-  {
     path: 'users',
     loadChildren: () => import('./modules/users/users.module').then(m => m.UsersModule),
   },
@@ -29,6 +25,15 @@ const routes: Routes = [
   {
     path: 'email-b',
     loadChildren: () => import('./modules/email-b/email-b.module').then(m => m.EmailBModule),
+  },
+  {
+    path: '',
+    redirectTo: 'users',
+    pathMatch: 'full',
+  },
+  {
+    path: '**',
+    redirectTo: 'users'
   },
 ];
 
