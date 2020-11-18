@@ -1,0 +1,34 @@
+$primary-color: #94c640;
+$secondary-color: #c1f6ed;
+$tertiary-color: #4b4b4b;
+
+/*COLORS*/
+$white-color: #FFFFFF;
+$black-color: #000000;
+$dark-gray-color: #4b4b4b;
+$gray-color: #888888;
+
+/*FONTS*/
+$font-regular: 'montserrat-regular';
+$font-medium: 'montserrat-medium';
+$font-bold: 'montserrat-bold';
+
+/*TEXT*/
+$primary-text-color: $dark-gray-color;
+$secondary-text-color: $gray-color;
+
+/*FONT SIZE*/
+$text-xs: 12px;
+$text-sm: 16px;
+$text-md: 24px;
+$text-lg: 36px;
+
+/*TRANSITION*/
+$transition: all 300ms ease-in-out;
+
+/*BORDER*/
+$border-color: $gray-color;
+$border-radius: 4px;
+
+/*BOX SHADOW*/
+$box-shadow: 4px 5px 10px 0px rgba($gray-color, 0.2);

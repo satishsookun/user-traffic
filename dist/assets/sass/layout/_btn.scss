@@ -1,0 +1,15 @@
+.btn {
+  padding: 15px 20px;
+  background-color: $primary-color;
+  font-size: $text-sm;
+  font-family: $font-medium;
+  transition: $transition;
+  color: rgba($primary-text-color, 0.8);
+  margin-top: 50px;
+  display: block;
+  cursor: pointer;
+  &:hover {
+    background-color: darken($primary-color, 5);
+    color: $primary-text-color;
+  }
+}

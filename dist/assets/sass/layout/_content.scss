@@ -1,0 +1,77 @@
+.content {
+  width: 100%;
+
+  &__user-data {
+    background-color: rgba($primary-color, 0.2);
+
+    ul {
+      display: flex;
+
+      li {
+        color: $primary-text-color;
+        font-size: $text-md;
+        font-family: $font-medium;
+        position: relative;
+        text-align: center;
+        padding: 0 30px;
+        height: 70px;
+        display: flex;
+        align-items: center;
+        span {
+          font-family: $font-bold;
+          font-size: $text-md;
+        }
+        &:first-child {
+          &:before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            background-color: $primary-color;
+            width: 3px;
+            height: 100%;
+          }
+        }
+
+        &:after {
+          content: '';
+          position: absolute;
+          top: 0;
+          right: 0;
+          margin: 5px 0;
+          width: 1px;
+          height: 40px;
+          background-color: $white-color;
+        }
+
+        &:last-child {
+          &:after {
+            display: none;
+          }
+        }
+
+        .info {
+          position: absolute;
+          top: 5px;
+          right: 5px;
+          font-size: 12px;
+          cursor: pointer;
+          color: $secondary-text-color;
+
+          i {
+            transition: $transition;
+          }
+          &:hover {
+            i {
+              color: $primary-color;
+            }
+          }
+        }
+      }
+    }
+  }
+  &__pages {
+    margin-top: 30px;
+    display: flex;
+  }
+}
